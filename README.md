@@ -1,9 +1,12 @@
 # CircleLayout
 环形布局，可拖动，独立item设置，可设置中心view
+
 #效果图
+
 ![效果图](./picture/circlelayout.gif)
 
 #用法
+
 ##引入
 ```gradle
     compile 'com.nelson:CircleLayout:0.1.0'
