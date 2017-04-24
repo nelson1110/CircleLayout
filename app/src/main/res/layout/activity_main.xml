@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tLools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.nelson.circlelayoutdemo.MainActivity">
 
@@ -12,7 +12,9 @@
         android:id="@+id/circle"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        app:radium="120dp"
+        >
 
         <ImageView
             android:id="@+id/image1"

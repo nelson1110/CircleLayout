@@ -7,7 +7,6 @@ import android.support.v4.util.Pair;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.MotionEventCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -216,7 +215,6 @@ public class CircleLayout extends ViewGroup implements GestureDetector.OnGesture
                 float x = ev.getX();
                 float y = ev.getY();
                 isDragging = Math.sqrt(Math.pow((x - lastX), 2) + Math.pow((y - lastY), 2)) > mTouchSlop;
-                Log.e("CircleLayout", "Move" + isDragging);
                 return isDragging;
 
 
@@ -401,5 +399,12 @@ public class CircleLayout extends ViewGroup implements GestureDetector.OnGesture
             removeView(mCenterView);
             mCenterView = null;
         }
+    }
+
+    /**
+     * @return 获取中心的view，没有的话就返回null
+     */
+    public View getmCenterView(){
+        return mCenterView;
     }
 }
