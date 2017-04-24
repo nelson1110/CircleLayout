@@ -57,6 +57,7 @@
     circleLayout.setCanScroll(boolean isCanScroll);
 ```
 7.如果想给每一个子view添加动画啥的，可以直接对子view进行操作
+
 8.更多用法请自行脑补
 
 
