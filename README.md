@@ -4,6 +4,11 @@
 ![效果图](./picture/circlelayout.gif)
 
 #用法
+##引入
+```gradle
+    compile 'com.nelson:CircleLayout:0.1.0'
+```
+##方法
 1.可以直接在布局文件中进行布局，类似LinearLayout，但是这里不需要关心布局方式，会自动将布局中的所有子view均匀分布到中心点四周，这里你可以设置自己想要的半径
 ```xml
 <com.nelson.circlelayout.CircleLayout
