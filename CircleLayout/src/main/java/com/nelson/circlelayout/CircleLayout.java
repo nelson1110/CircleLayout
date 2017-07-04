@@ -407,4 +407,13 @@ public class CircleLayout extends ViewGroup implements GestureDetector.OnGesture
     public View getmCenterView(){
         return mCenterView;
     }
+
+    public double getChangeCorner() {
+        return mChangeCorner;
+    }
+
+    public void setChangeCorner(double mChangeCorner) {
+        this.mChangeCorner = mChangeCorner;
+        invalidate();
+    }
 }
