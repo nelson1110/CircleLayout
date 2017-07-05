@@ -70,6 +70,7 @@ public class CircleLayout extends ViewGroup implements GestureDetector.OnGesture
         if (attrs != null) {
             try {
                 mRadius = (int) a.getDimension(R.styleable.CircleLayout_radium, 250);
+                mChangeCorner = (double)a.getFloat(R.styleable.CircleLayout_changeCorner,0);
             } finally {
                 a.recycle();
             }
@@ -375,7 +376,7 @@ public class CircleLayout extends ViewGroup implements GestureDetector.OnGesture
     }
 
     /**
-     * @param canScroll 设置石否可以旋转
+     * @param canScroll 设置是否可以旋转
      */
     public void setCanScroll(boolean canScroll) {
         isCanScroll = canScroll;
@@ -404,15 +405,21 @@ public class CircleLayout extends ViewGroup implements GestureDetector.OnGesture
     /**
      * @return 获取中心的view，没有的话就返回null
      */
-    public View getmCenterView(){
+    public View getCenterView(){
         return mCenterView;
     }
 
+    /**
+     * @return 获取旋转角度
+     */
     public double getChangeCorner() {
         return mChangeCorner;
     }
 
-    public void setChangeCorner(double mChangeCorner) {
+    /**
+     * @param changeCorner 设置旋转角度
+     */
+    public void setChangeCorner(double changeCorner) {
         this.mChangeCorner = mChangeCorner;
         invalidate();
     }

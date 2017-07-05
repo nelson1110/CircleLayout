@@ -57,8 +57,13 @@
 ```java
     circleLayout.setCanScroll(boolean isCanScroll);
 ```
-7.如果想给每一个子view添加动画啥的，可以直接对子view进行操作
+7.可以手动设置layout旋转角度(也可以在xml中设置)
+```java
+    circleLyoaut.setChangeCorner(double changeCorner)
+```
 
-8.更多用法请自行脑补
+8.如果想给每一个子view添加动画啥的，可以直接对子view进行操作
+
+9.更多用法请自行脑补
 
 
